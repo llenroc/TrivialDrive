@@ -10,7 +10,7 @@ using Microsoft.Azure.Mobile.Crashes;
 
 namespace TrivialDriveSample
 {
-	[Activity(Label = "Trivial Drive", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity(Label = "Trivial Drive", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 
