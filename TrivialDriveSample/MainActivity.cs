@@ -7,6 +7,7 @@ using Plugin.InAppBilling;
 using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
+using Android.Gms.Dynamite.Descriptors.Ads.Dynamite;
 
 namespace TrivialDriveSample
 {
@@ -18,7 +19,9 @@ namespace TrivialDriveSample
 		{
 			base.OnCreate(savedInstanceState);
 
-			MobileCenter.Start("bb1d7d09-a394-45e0-87ac-57bed83d9904",
+           System.Console.WriteLine(ModuleDescriptor.ModuleVersion);
+
+            MobileCenter.Start("bb1d7d09-a394-45e0-87ac-57bed83d9904",
 					typeof(Analytics), typeof(Crashes));
 
 			// Set our view from the "main" layout resource
